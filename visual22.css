@@ -1,0 +1,279 @@
+  /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            background: #0d0d0f;
+            font-family: Arial;
+            color: #fff
+        }
+
+        /* HEADER */
+        header {
+            padding: 5px 5px 0px 5px;
+            background: #4a5c6a;
+        }
+
+        .sub_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+             padding: 19.5px 20px;
+            border-radius: 5px;
+            background: #222b31;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo span {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* MENU / FILTROS */
+        .filtros {
+            display: flex;
+            gap: 10px;
+        }
+
+        .filtros a,
+        .filtros input,
+        .filtros select,
+        .filtros button {
+             padding: 8px;
+  font-size: 13px;
+            border-radius: 6px;
+            border: 1px solid #333;
+            background: #1a1a1d;
+            color: #525b61ff;
+            text-decoration: none;
+        }
+
+
+        /* MOBILE MENU */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 28px;
+        }
+
+        @media(max-width:900px) {
+            .filtros {
+                position: absolute;
+                top: 70px;
+                right: 0;
+                background: #111;
+                flex-direction: column;
+                padding: 15px;
+                width: 220px;
+                display: none;
+                border-left: 4px solid #fb7806;
+            }
+
+            .hamburger {
+                display: block
+            }
+        }
+
+        /* GRID */
+        .grid {
+            background: #222b31;
+
+            padding: 70px 20px 20px 20px;
+            min-height: calc(100vh - 83px);
+            /* altura da tela menos o header */
+            display: grid;
+            border-radius: 5px;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        }
+
+        section {
+            padding: 5px;
+            background: #4a5c6a;
+
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .titulo {
+            position: absolute;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+
+        .sub_titulo01 {
+            height: 4px;
+            width: 70px;
+            background: #fb7806;
+            margin-bottom: 5px;
+        }
+
+        .sub_titulo02 {
+            height: 4px;
+            width: 50px;
+            background: #fb7806;
+            margin-top: 6px;
+        }
+
+        .card {
+            background: #4a5c6a;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #1b1b1bff;
+            height: 250px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #ca7c24ff;
+            color: #525b61ff;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+
+            background: #fb7806;
+            color: #ffffffff;
+        }
+
+        .footer-content {
+            text-align: center;
+            display: flex;
+            padding: 10px;
+            color: #888;
+            background: #222b31;
+        }
+
+        .footer-content01 {
+            background: #192125ff;
+            padding: 4px 10px;
+            text-align: left;
+        }
+
+        .footer-content02 {
+            flex: 1;
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        footer a {
+            color: #fb7806;
+            text-decoration: none;
+        }
+
+
+        .bot_buscar a {
+            background: #ca7c24ff;
+            cursor: pointer;
+            color: #525b61ff;
+            font-size: 12px;
+            position: relative;
+              bottom: 3px;
+        }
+
+        .bot_buscar svg {
+            position: relative;
+            top: 4px;
+            right: 5px;
+        }
+
+        .bot_buscar a:hover {
+            background: #fb7806;
+            cursor: pointer;
+            color: #ffffffff;
+        }
+
+        .bot_buscar2 a {
+            background: #ca7c24ff;
+            cursor: pointer;
+            color: #525b61ff;
+            font-size: 14px;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            position: relative;
+            bottom: 3px;
+        }
+
+        .bot_buscar2 svg {
+            position: relative;
+            top: 2px;
+            right: 5px;
+        }
+
+        .bot_buscar2 a:hover {
+            background: #fb7806;
+            cursor: pointer;
+            color: #ffffffff;
+        }
+
+        /* GRID */
+        .grid {
+            background: #222b31;
+            padding: 120px 20px 20px 20px;
+            /* aumentei pois o título é absoluto */
+            min-height: calc(100vh - 83px);
+            display: grid;
+            border-radius: 5px;
+            gap: 20px;
+            grid-template-columns: 1fr;
+            place-items: center;
+            /* Centraliza TUDO dentro do grid */
+        }
+
+        /* VIDEO RESPONSIVO */
+        .video-box {
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 16/9;
+            /* Mantém proporção de vídeo */
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #video {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 1162px) {
+            #video {
+                width: 100%;
+
+
+                border-radius: 8px;
+            }
+        }
+
+
+        .video-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 1 / -1;
+            /* ocupa toda a largura do grid */
+        }
