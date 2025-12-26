@@ -1,9 +1,9 @@
 
 <?php
-$servername = "localhost";
-$username = "root";
+$servername = "";
+$username = "";
 $password = "";
-$dbname = "portifolio";
+$dbname = "";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 $conn->set_charset("utf8mb4"); // Define a conexão para UTF-8
